@@ -29,14 +29,14 @@
     "assets": {
       "host01": [
         {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-        {"file": "hello2.cpp", "target": "helloworld2/source/"},
-        {"file": "CMakeLists.txt", "target": "helloworld2/source/"},
-        {"file": "conanfile.txt", "target": "helloworld2/source/"}
+        {"file": "hello2.cpp", "target": ""},
+        {"file": "CMakeLists.txt", "target": ""},
+        {"file": "conanfile.txt", "target": ""}
       ]
     }
   },
   "environment": {
-    "uilayout": "editor-terminal",
+    "uilayout": "terminal",
     "uimessage1": "Welcome, wait until we prepare the environment..."
   },
   "backend": {
