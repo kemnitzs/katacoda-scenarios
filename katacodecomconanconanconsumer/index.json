@@ -29,7 +29,7 @@
     "assets": {
       "host01": [
         {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-        {"file": "hello2.cpp", "target": "~/"},
+        {"file": "main.cpp", "target": "~/"},
         {"file": "CMakeLists.txt", "target": "~/"},
         {"file": "conanfile.txt", "target": "~/"}
       ]
