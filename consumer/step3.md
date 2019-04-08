@@ -1,25 +1,25 @@
-Now we are building our project but for the `x86` architecture.
+In the previous step we have installed the dependencies and build our project for `Release`, now we 
+want to build it for `Debug`.
 
-Create a new clean "build_x86" folder:
+Create a new clean "build_debug" folder:
 
-`cd ~ && mkdir build_x86 && cd build_x86`{{execute}}
+`cd ~ && mkdir build_debug && cd build_debug`{{execute}}
 
-Install the requirements, observe that with `-s arch=x86` we are overriding the default architecture to specify 32 bits:
+Install the requirements, observe that with `-s build_type=Debug` we are overriding the default `build_type` that is Release:
 
-`conan install .. -s arch=x86`{{execute}}
+`conan install .. -s build_type=Debug`{{execute}}
 
 
 If we inspect again the concrete `Poco` reference, we see that we have now two binaries:
 
-- One for our default configuration: `arch=x86_64`
-- Another one for `arch=x86_64`
+- One for our default configuration: `build_type=Release`
+- Another one for `build_type=Debug`
 
 `conan search Poco/1.9.0@pocoproject/stable`{{execute}}
 
-We can proceed to build our project normally:
+Build our project normally:
 
-`cmake ..`{{execute}}
-
+`cmake .. -DCMAKE_BUILD_TYPE=Debug`{{execute}}
 `cmake --build .`{{execute}}
 
 And run the executable:

@@ -37,7 +37,7 @@ If we inspect that concrete reference, we see that we have a binary for our defa
 So, we have everything we need from Conan. We can proceed to build our project normally:
 
 
-`cmake ..`{{execute}}
+`cmake .. -DCMAKE_BUILD_TYPE=Release`{{execute}}
 
 `cmake --build .`{{execute}}
 
