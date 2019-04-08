@@ -16,7 +16,7 @@ we will see why very soon.
 
 We use this file to declare:
     
-- The **[requires]** of our project, where we declare we need `Poco/1.9.0@pocoproject/stable`.
+- The **[requires]** of our project, where we declare we need the version `1.9.0` of the `Poco` library.
 - The **[generators]**. Conan supports several generators, with the ``cmake`` one, we are telling conan
   to generate a cmake script for us that we can include in the ``CMakeLists.txt`` file to "link" with our 
   dependencies, in this case the ``Poco`` libraries.
