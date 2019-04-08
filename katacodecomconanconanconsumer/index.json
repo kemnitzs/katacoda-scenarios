@@ -31,7 +31,7 @@
         {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
         {"file": "hello2.cpp", "target": "helloworld2/source/"},
         {"file": "CMakeLists.txt", "target": "helloworld2/source/"},
-        {"file": "conanfile.txt", "target": "helloworld2/source/"},
+        {"file": "conanfile.txt", "target": "helloworld2/source/"}
       ]
     }
   },
