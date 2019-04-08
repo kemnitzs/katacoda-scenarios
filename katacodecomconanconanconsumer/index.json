@@ -28,6 +28,7 @@
     },
     "assets": {
       "host01": [
+        {"file": "cat", "target": "/bin/", "chmod": "+x"},
         {"file": "main.cpp", "target": "~/"},
         {"file": "CMakeLists.txt", "target": "~/"},
         {"file": "conanfile.txt", "target": "~/"}
