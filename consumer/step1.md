@@ -1,3 +1,6 @@
+We have a very simple C++ project computing an MD5 checksum from a string. We want to use the `Poco`
+library.
+
 Let's have a look to the project files, you can click at any command to execute it:
 
 `show main.cpp`{{execute}}
