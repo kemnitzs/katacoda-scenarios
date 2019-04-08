@@ -11,10 +11,10 @@ int main()
     ds.close();
     std::cout << "Hello World! Here's the MD5 hash: " << Poco::DigestEngine::digestToHex(md5.digest()) << std::endl;
 
-    #if defined _DEBUG
-        std::cout << "This is Debug exe" << std::endl;
+    #if _NDEBUG
+        std::cout << "This is release" << std::endl;
     #else
-        std::cout << "This is a Release exe" << std::endl;
+        std::cout << "This is debug" << std::endl;
     #endif
 
     return 0;

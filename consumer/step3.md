@@ -20,6 +20,7 @@ If we inspect again the concrete `Poco` reference, we see that we have now two b
 Build our project normally:
 
 `cmake .. -DCMAKE_BUILD_TYPE=Debug`{{execute}}
+
 `cmake --build .`{{execute}}
 
 And run the executable:
