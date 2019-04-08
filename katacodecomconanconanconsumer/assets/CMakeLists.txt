@@ -7,5 +7,5 @@ include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
 #Building the actual application
-add_executable(hello2 hello2.cpp)
-target_link_libraries(hello2 ${CONAN_LIBS})
+add_executable(main main.cpp)
+target_link_libraries(main ${CONAN_LIBS})
