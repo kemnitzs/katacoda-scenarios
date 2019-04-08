@@ -1,15 +1,17 @@
-Let's have a look to the project files, you can click on the command to run it:
+Let's have a look to the project files, you can click at any command to execute it:
 
-`cat main.cpp`{{execute}}
+`catc main.cpp`{{execute}}
 
 This is a simple program computing an MD5, you can see that we are including some headers from Poco.
 
-`cat CMakeLists.txt`{{execute}}
+`catc CMakeLists.txt`{{execute}}
 
 We are going to use CMake to build our example, but any other build system could be used.
-The only particular thing with 
+The only particular thing in this ``CMakeLists.txt`` file is the inclusion of the ``conanbuildinfo.cmake``
+we will see why very soon.
 
-`cat conanfile.txt`{{execute}}
+
+`catc conanfile.txt`{{execute}}
 
 We use this file to declare:
     
