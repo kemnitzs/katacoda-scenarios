@@ -1,6 +1,4 @@
-We have a very simple C++ project computing an MD5 checksum from a string. We want to use the `Poco`
-library.
-
+We have a very simple C++ project computing an MD5 checksum from a string using the `Poco` library.
 Let's have a look to the project files, you can click at any command to execute it:
 
 `show main.cpp`{{execute}}
@@ -18,7 +16,7 @@ we will see why very soon.
 
 We use this file to declare:
     
-- The **[requires]** of our project
+- The **[requires]** of our project, where we declare we need `Poco/1.9.0@pocoproject/stable`.
 - The **[generators]**. Conan supports several generators, with the ``cmake`` one, we are telling conan
   to generate a cmake script for us that we can include in the ``CMakeLists.txt`` file to "link" with our 
   dependencies, in this case the ``Poco`` libraries.
